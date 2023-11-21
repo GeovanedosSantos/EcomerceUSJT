@@ -7,5 +7,6 @@ package com.mycompany.ecommerce;
 public class Pedido {
    private int numeropedido;    
    private int quantidadepedido;
+   private int fretepedido;
     
 }

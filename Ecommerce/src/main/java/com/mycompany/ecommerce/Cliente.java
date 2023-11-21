@@ -38,7 +38,7 @@ public class Cliente {
      * @return the telefone
      */
     public String getTelefone() {
-        return telefone;
+     return telefone;
     }
 
     /**
@@ -65,6 +65,8 @@ public class Cliente {
     private String email;
     private String telefone;
     private int idade;
-    private int saldo;
+    private double saldo;
     
+
+
 }
