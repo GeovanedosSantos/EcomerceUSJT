@@ -8,5 +8,6 @@ public class Pedido {
    private int numeropedido;    
    private int quantidadepedido;
    private int fretepedido;
+   private double precopedido;
     
 }

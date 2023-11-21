@@ -4,7 +4,23 @@
 
 package com.mycompany.ecommerce;
 
+import javax.swing.JOptionPane;
+
 public class Cliente {
+
+    /**
+     * @return the senha
+     */
+    public String getSenha() {
+        return senha;
+    }
+
+    /**
+     * @param senha the senha to set
+     */
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
 
     /**
      * @return the nome
@@ -63,10 +79,23 @@ public class Cliente {
     }
     private String nome;
     private String email;
+    private String senha;
     private String telefone;
     private int idade;
-    private double saldo;
+    private double saldo;   
     
+    public Cliente(String nome,String email,String telefone,int idade){
+        setNome(nome);
+        setEmail(email);
+        setTelefone(telefone);
+        setIdade(idade);
+    }
+    public double adicionaSaldo(){
+        double adiciona = Double.parseDouble(JOptionPane.showInputDialog("Digite o quanto vai ser adicionado"));
+        saldo+=adiciona;
+        return saldo;
+    }
+  
 
 
 }

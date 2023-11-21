@@ -50,9 +50,9 @@ public class Produto {
     private String nomeproduto;
     
     public Produto(int tipoproduto,double precoproduto,String nomeproduto){
-        this.tipoproduto = tipoproduto;
-        this.precoproduto = precoproduto;
-        this.nomeproduto = nomeproduto;
+        setTipoproduto(tipoproduto);
+        setPrecoproduto(precoproduto);
+        setNomeproduto(nomeproduto);
         
     }
 }
